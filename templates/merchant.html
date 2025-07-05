@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-xl p-8 max-w-lg w-full">
+        <h2 class="text-2xl font-bold text-green-600 mb-4 text-center">Enter Merchant Settings</h2>
+        <form action="/merchant-settings" method="POST" class="space-y-5">
+            <div>
+                <label class="block text-gray-700 mb-1">Merchant Name</label>
+                <input type="text" name="name" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="merchant name" required>
+            </div>
+            <div>
+                <label class="block text-gray-700 mb-1">Payment Method</label>
+            <select name="method" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500">
+                <option value="mobile">Mobile</option>
+                <option value="card">Card</option>
+                <option value="bank">Bank</option>
+            </select>
+            </div>
+            <div>
+                <label class="block text-gray-700 mb-1">Provider</label>
+                <input type="text" name="provider" placeholder="eg: M-pesa" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+            </div>
+            <div>
+                <label class="block text-gray-700 mb-1">Payment Config</label>
+                <textarea name="config" rows="3" placeholder='example: {"phone": "+255..."}' class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-sm text-blue-500 hover:underline">Back to Home</a>
+
+                <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Save Settings</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
