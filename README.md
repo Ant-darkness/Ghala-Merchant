@@ -29,7 +29,33 @@ This support different agreements per merchant.
 *Paginate orders view.
 *Split services.
 
+# How to run this project
+To run this project locally on your computer:
+1.Clone the repository
+
+    git clone https://github.com/Ant-darkness/Ghala-Merchant.git
+
+    cd Ghala-merchant
+
+2. Install dependecies
+   Make sure you have python installed (3.8+). Then install flask:
+
+       pip install flask
+
+3. Run flask server
+   
+       python ghala.py
+
+   *Then open your browser and visit
+   
+       http://127.0.0.1:50000
+   *Registor merchants.
+   *Create and View orders.
+   *Before View order you must add id, product,and total of reistered merchant
+   *Simulate payments.
+    
+
 # Author
-Abely J. Abely
-Email: codewithabel1@gmail.com
-WhatsApp: +255 714 1315 19.
+    Abely J. Abely
+    Email: codewithabel1@gmail.com
+    WhatsApp: +255 714 1315 19.
